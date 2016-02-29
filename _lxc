@@ -1,3 +1,4 @@
+# vim:ft=zsh ts=2 sw=2 sts=2
 #compdef lxc-start lxc-stop lxc-restart lxc-create lxc-destroy lxc-monitor lxc-console lxc-ls lxc-top lxc-cgroup lxc-checkpoint lxc-execute lxc-attach lxc-freeze lxc-unfreeze lxc-info lxc-wait lxc-snapshot 
 ##########################################
 #Copyright (c) 2016 Blagovest Petrov <blagovest@petrovs.info>
@@ -82,7 +83,7 @@ _lxc_top_opts=(
 	'(-d, --delay)'{-d, --delay}'[Amount of time in seconds to delay between screen updates]'
 	'(-s, --sort)'{-s, --sort}'[Sort the containers by name, cpu use, or memory use. The sortby argument should be one of the letters  n,c,b,m,k to sort by name, cpu use, block I/O, memory, or kernel memory use respective-ly. The default is "n".]:name:_lxc_sortby'
 	'(-r, --reverse)'{-r, --reverse}'[Reverse the default sort order]'
-}
+)
 
 _lxc_common_opts=(
 	'(-o --logfile)'{-o,--logfile=}'[Output log to FILE instead of stderr]:logfile:_files'
